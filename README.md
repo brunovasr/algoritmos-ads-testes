@@ -28,7 +28,9 @@ algoritmos-ads-testes/
 │   ├── extensions.json      # extensões recomendadas do VS Code
 │   └── launch.json          # configurações de depuração (F5)
 ├── docs/
-│   └── roteiro-video-depuracao.md
+│   ├── roteiro-video-depuracao.md
+│   └── prints/
+│       └── resultado-npm-test.png   # print da execução dos testes (npm test)
 ├── web/                     # interface web (front-end)
 │   ├── index.html
 │   ├── style.css
@@ -215,6 +217,10 @@ Resultado esperado:
 Test Suites: 6 passed, 6 total
 Tests:       52 passed, 52 total
 ```
+
+Execução real no VS Code, com os seis arquivos de teste da pasta `tests/` passando:
+
+![Resultado do npm test no VS Code: 6 suítes e 52 testes aprovados](docs/prints/resultado-npm-test.png)
 
 Para rodar os testes de um único algoritmo, ou acompanhar as mudanças em tempo real:
 

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interface web para executar os algoritmos da atividade de ADS.">
+  <title>Algoritmos ADS | bancada de execução</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧮</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="folha">
+    <header class="topo">
+      <h1>Algoritmos em <span id="titulo-linguagem">JavaScript</span></h1>
+      <p>
+        Escolha a linguagem e o algoritmo, informe os valores e execute. O código executado é o
+        mesmo dos arquivos da pasta <code id="pasta-linguagem">javascript/</code> do projeto.
+      </p>
+
+      <fieldset class="linguagens">
+        <legend>Rodar em</legend>
+        <div class="linguagens-opcoes">
+          <label><input type="radio" name="linguagem" value="javascript" checked><span>JavaScript</span></label>
+          <label><input type="radio" name="linguagem" value="java"><span>Java</span></label>
+        </div>
+        <p id="status-java" class="status-java" aria-live="polite" hidden></p>
+      </fieldset>
+    </header>
+
+    <div class="layout">
+      <nav class="indice" aria-label="Algoritmos">
+        <ol id="lista-algoritmos"></ol>
+      </nav>
+
+      <main id="painel" class="painel" tabindex="-1"></main>
+    </div>
+
+    <footer class="rodape">
+      Atividade de Análise e Desenvolvimento de Sistemas.
+      Código-fonte em
+      <a href="https://github.com/brunovasr/algoritmos-ads">github.com/brunovasr/algoritmos-ads</a>.
+    </footer>
+  </div>
+
+  <!-- Algoritmos da atividade #1, carregados sem nenhuma alteração de lógica.
+       A versão em Java (web/algoritmos.jar) é carregada sob demanda pelo app.js, via CheerpJ. -->
+  <script src="../javascript/01-numero-primo.js"></script>
+  <script src="../javascript/02-somatorio.js"></script>
+  <script src="../javascript/03-fibonacci.js"></script>
+  <script src="../javascript/04-mdc.js"></script>
+  <script src="../javascript/05-quicksort.js"></script>
+  <script src="../javascript/06-contagem.js"></script>
+
+  <!-- Interface -->
+  <script src="app.js"></script>
+</body>
+</html>

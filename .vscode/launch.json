@@ -1,0 +1,31 @@
+{
+  // Configuracoes de depuracao do projeto (Run and Debug / F5).
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "JS: depurar arquivo atual",
+      "program": "${file}",
+      "cwd": "${fileDirname}",
+      "console": "internalConsole",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "JS: depurar arquivo atual (parar na primeira linha)",
+      "program": "${file}",
+      "cwd": "${fileDirname}",
+      "console": "internalConsole",
+      "stopOnEntry": true,
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Java: depurar arquivo atual",
+      "mainClass": "${file}"
+    }
+  ]
+}

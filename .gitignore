@@ -1,0 +1,15 @@
+# Arquivos compilados do Java
+*.class
+java/out/
+java/bin/
+
+# Node
+node_modules/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Editores
+.idea/
+*.iml

@@ -1,0 +1,31 @@
+# EditorConfig - https://editorconfig.org
+# Padroniza a formatacao do codigo entre diferentes editores e sistemas.
+
+# Indica que este e o arquivo EditorConfig de nivel mais alto do projeto.
+root = true
+
+# Regras aplicadas a todos os arquivos
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+max_line_length = 100
+
+# JavaScript e JSON usam 2 espacos
+[*.{js,json}]
+indent_size = 2
+
+# Java usa 4 espacos
+[*.java]
+indent_size = 4
+
+# Markdown preserva espacos no fim da linha (quebra de linha forcada)
+[*.md]
+trim_trailing_whitespace = false
+
+# Arquivos de configuracao YAML
+[*.{yml,yaml}]
+indent_size = 2

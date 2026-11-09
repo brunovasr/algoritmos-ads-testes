@@ -1,0 +1,24 @@
+{
+  "name": "algoritmos-ads-testes",
+  "version": "1.0.0",
+  "description": "Algoritmos fundamentais em JavaScript com testes unitarios automatizados (Jest) - ADS",
+  "private": true,
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ]
+  },
+  "keywords": [
+    "algoritmos",
+    "jest",
+    "testes-unitarios"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.5.2"
+  }
+}
